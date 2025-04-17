@@ -1,0 +1,81 @@
+# Entornos virtuales
+venv/
+env/
+.venv/
+*.pyenv
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de configuración de IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# Django
+/media/
+/staticfiles/
+*.sqlite3
+db.sqlite3
+*.log
+
+# Archivos de configuración local
+settings/local.py
+
+# Archivos de distribución / empaquetado
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# Logs y bases de datos
+*.log
+*.sql
+*.sqlite
+*.db
+*.db-journal
+
+# Pruebas y cobertura
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de npm
+node_modules/
+npm-debug.log*
+
+# Archivos temporales
+*.swp
+*.swo
+
+# Celery
+celerybeat-schedule.*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
