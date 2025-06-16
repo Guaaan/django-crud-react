@@ -1,12 +1,14 @@
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export function Navigation() {
-      return (
-            <div>
-                  <Link to="/items">
-                        <h1>Gestor de Items</h1>
-                  </Link>
-                  <Link to="/items-create">Create Item</Link>
-            </div>
-      );
+  return (
+    <div className="flex justify-between py-3 items-center">
+      <Link to="/items">
+        <h1 className="font-bold text-3xl mb-4">Items App</h1>
+      </Link>
+      <button className="bg-indigo-500 p-3 rounded-lg">
+        <Link to="/items-create">Create Item</Link>
+      </button>
+    </div>
+  );
 }
