@@ -1,0 +1,27 @@
+{
+    "builds": [
+        {
+            "src": "django_crud_api/wsgi.py",
+            "use": "@vercel/python"
+        },
+        {
+            "src": "client/package.json",
+            "use": "@vercel/static-build",
+            "config": { "distDir": "client/dist" }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "django_crud_api/wsgi.py"
+        },
+        {
+            "src": "/static/(.*)",
+            "dest": "client/dist/static/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "client/dist/index.html"
+        }
+    ]
+}
